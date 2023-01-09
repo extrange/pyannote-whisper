@@ -1,0 +1,7 @@
+services:
+  pyannote:
+    container_name: pyannote
+    build: .
+    volumes:
+      - ./src:/src
+    command: python3 /src/main.py
